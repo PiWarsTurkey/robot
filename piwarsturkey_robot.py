@@ -21,9 +21,9 @@ class Servo:
     duty = angle / 18 + 2
     GPIO.output(self.pin, True)
     self.pwm.ChangeDutyCycle(duty)
-    sleep(0.2)
+    sleep(0.5)
     GPIO.output(self.pin, False)
-    pwm.ChangeDutyCycle(0)
+    self.pwm.ChangeDutyCycle(0)
 
 class Ultrasonic:
   def __init__(self, echo, trig):
