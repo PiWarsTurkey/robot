@@ -1,4 +1,4 @@
-istutils.core import setup
+from distutils.core import setup
 setup(name='piwarsturkey_robot',
       version='1.0.0',
       description=('Library for the Pi Wars Turkey Robot'),
